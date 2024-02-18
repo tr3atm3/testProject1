@@ -1,0 +1,14 @@
+.user-div {
+  width: 100%;
+  padding: 10px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.user-div.invalid {
+  display: none;
+}
+.user-div ul {
+  list-style-type: none;
+  padding: 0;
+}

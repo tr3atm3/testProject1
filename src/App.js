@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import FormComp from "./component/Form/FormComp";
+import "./App.css";
+import AddFormComp from "./component/UserInfo/AddFormComp";
 
-function App() {
+const App = () => {
+  const [entries, setEntries] = useState([]);
+  const [modal, setModal] = useState(false);
+
+  const handleModal = () => {
+    setModal(false);
+  };
+
+  const addEntries = (entry) => {
+    setEntries((prev) => [entry, ...prev]);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="upper-div">
+      <FormComp
+        addEntries={addEntries}
+        modal={modal}
+        handleModal={handleModal}
+        setModal={setModal}
+      />
+      {!modal && <AddFormComp details={entries} />}
     </div>
   );
-}
+};
 
 export default App;

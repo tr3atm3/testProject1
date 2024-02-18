@@ -1,0 +1,32 @@
+.form-comp {
+  width: 100%;
+  padding: 10px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.form-comp label {
+  display: block;
+  margin-bottom: 8px;
+}
+.form-comp input {
+  width: 100%;
+  border: 0.5px groove rgb(209, 208, 208);
+  height: 25px;
+}
+.form-comp button {
+  display: flex;
+  margin: 15px auto;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: white;
+  border: none;
+}
+.username {
+  margin: 10px;
+}
+.age {
+  margin: 10px;
+}

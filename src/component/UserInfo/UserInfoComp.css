@@ -1,0 +1,7 @@
+li {
+  border: 0.5px groove rgb(209, 208, 208);
+  border-radius: 3px;
+  margin: 10px;
+  width: 92%;
+  padding: 2px 8px;
+}
